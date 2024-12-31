@@ -111,6 +111,13 @@ The Real-Time Chat Application is a highly interactive and responsive web applic
 </ol>
 ### Real-Time Chat Application Using WebSockets and Vue.js / React.js
 
+# output of the task:
+
+
+![output 1](https://github.com/user-attachments/assets/56f2f9a1-0ac6-4f6a-a2ea-19a6cd42cf10)
+
+![output 2 (2)](https://github.com/user-attachments/assets/1633bce0-4afd-4eb6-bd60-4454734ab91d)
+
 #### Conclusion:
 
 The Real-Time Chat Application built using WebSockets and Vue.js/React.js is a modern, scalable solution for real-time communication between users. It provides a fluid, responsive, and engaging experience, with instant message delivery, user presence tracking, and an interactive front-end interface. The application can serve as a foundation for more complex chat systems, supporting features like authentication, private messaging, message persistence, and more. By leveraging WebSockets and front-end frameworks, the project demonstrates how real-time applications can be built efficiently and effectively.

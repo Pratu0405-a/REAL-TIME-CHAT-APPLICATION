@@ -1,0 +1,175 @@
+/* General Body Styling */
+body {
+    height: 100vh;
+    background-color: rgb(158, 160, 180); /* Fallback color */
+    background-image: url('../images/o.jpg'); /* Full body background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sansita Swashed', cursive;
+    color: #333;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Header Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 200px; /* Adjust the width to make the logo smaller */
+    height: auto; /* Ensures the logo maintains its aspect ratio */
+}
+
+h1 {
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+    color: rgb(241, 13, 13);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Chatbox Container with Overlay */
+.container {
+    width: 80%;
+    margin: auto;
+    height: 50vh;
+    padding: 20px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    backdrop-filter: blur(10px); /* Background blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border */
+    animation: fadeIn 1.5s ease-in-out;
+
+    /* Adding background image */
+    background-image: url('../images/bg1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    
+    /* Adding a dark overlay */
+    position: relative;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Semi-transparent black overlay */
+    border-radius: 20px; /* Matches the border-radius of the container */
+}
+
+
+/* Message Styling */
+.message {
+    background-color: #4caf50;
+    color: white;
+    width: auto;
+    max-width: 60%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Left & Right Message Styling */
+.left {
+    float: left;
+    clear: both;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.right {
+    float: right;
+    clear: both;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Input and Button Section */
+#send-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+#messageInp {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+#messageInp:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
